@@ -47,3 +47,4 @@ https://github.com/sumsethan/MyRules/raw/master/Rules/BacktoChina.conf
 2017.12.7
 
 初始版本，添加出国/回国规则。
+2024年规则地址:https://raw.githubusercontent.com/cutethotw/ClashRule/main/GeneralClashRule.ini

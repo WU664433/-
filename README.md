@@ -1,5 +1,4 @@
-我的规则
-包含的服务器地址：https://github.com/surge/surge/blob/master/S ...
+
 
 包括内网穿透规则，具体方式见https://github.com/fatedier/frp
 

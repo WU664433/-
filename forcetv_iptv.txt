@@ -1,0 +1,52 @@
+09:28:03-001 Develop Version:0833
+09:28:03-001 forcetv_init port:9906, pool:50MB
+09:28:03-001 forcetv now 2024-05-25 09:28:03
+09:28:03-002 call chan_block::instance()->open
+09:28:03-002 j_fixed_mem_pool::malloc try alloc num:45511, size:1152, alloc_block:0, used_block:0
+09:28:03-041 j_fixed_mem_pool::malloc prt min:0x14c0d000, max:0xb675bb04
+09:28:03-042 chan_block::instance()->open success
+09:28:03-042 net_task::instance()->open success
+09:28:03-042 chan_mgr::instance()->open success
+09:28:03-042 publisher_mgr::instance()->open success
+09:28:03-042 x_ms_acceptor::open fd:67, local:127.0.0.1:9906
+09:28:03-042 x_ms_acceptor ip:127.0.0.1, port:9906
+09:28:03-042 x_ms_acceptor ip:10.25.107.66, port:9906
+09:28:03-042 x_ms_acceptor ip:192.168.0.103, port:9906
+09:28:03-042 ms_acceptor::instance()->open success
+09:28:03-042 forcetv_run is_block:0
+09:28:03-048 x_net_task run call run_reactor_event_loop 0x3ba2
+09:28:06-049 recv n1ew connection:127.0.0.1:42640,fd:162
+09:28:06-051 x_tcp_handler::x_tcp_handler 
+09:28:06-051 x_tcp_handler::open fd:162 set sndbuf to 262144
+09:28:06-052 x_tcp_handler::handle_input recv data fd:162, ret:140
+09:28:06-052 x_tcp_handler::_check_ptl http head fd:162, data:
+GET /api?func=query_process_info HTTP/1.1
+Host: 127.0.0.1:9906
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: okhttp/3.9.0
+
+
+09:28:06-055 x_vod_http_parser::x_vod_http_parser impl:x_cmd_http_parser
+09:28:06-055 x_tcp_handler::handle_input check_ptl ok, fd:162
+09:28:06-055 x_cmd_http_parser::handle_get fd:162 
+09:28:06-055 GET /api?func=query_process_info HTTP/1.1
+Host: 127.0.0.1:9906
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: okhttp/3.9.0
+
+
+09:28:06-055 x_cmd_http_parser::_send_cmd rephead:
+HTTP/1.1 200 OK
+Content-Length: 422
+Content-Type: text/xml
+Server: forcetech/lzs
+
+
+09:28:06-055 x_cmd_http_parser::_send_cmd repbody:
+<?xml version="1.0" encoding="utf-8"?><forcetv><result ret="0" reason="success" op_clock_used="0" op_clock_start="3060" /><process build="Sep  1 2021" pid="15266" mem_cache="52428672" mem_data="0" mem_max="52428800" port="9906" factory="device/P2P_fanya_c2micro_android_v3.0_2016mc_uplog_20210901_18:10:00" develop_version="New version 2013,do not support old server, 3.14.17.8 build[Sep  1 2021 18:10:00]"/></forcetv>
+
+
+09:28:29-277 Java_com_forcetech_android_ForceTV_stop
+09:28:29-280 forcetv_stop
